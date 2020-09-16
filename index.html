@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin: auto;
+            width: 70%;
+        }
+        
+        #nut {
+            padding-left: 20%;
+        }
+    </style>
+    <script src="../../webSource/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+    <form>
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    First Name
+                </td>
+                <td>
+                    <input type="text" name="rollno" id="firstName" required='required' class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="name" id="lastName" required class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" name="name" id="city" required class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <input type="number" name="name" id="mobile" required class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2" id="nut">
+                    <input type="button" name="addBtn" value="Add" id="addBtn" />
+                    <input type="button" name="updateBtn" value="Update" id="updateBtn" />
+                    <input type="button" name="deleteBtn" value="Delete" id="deleteBtn" />
+                    <input type="button" name="clearBtn" value="Clear" id="clearBtn" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="result"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">For Edit Record</td>
+            </tr>
+            <tr>
+                <td>Enter ID</td>
+                <td>
+                    <input type="number" id="txtSearch" min="1" onchange="show()" class="form-control" />
+                    <input type="button" name="btnShow" value="Show" id="btnShow" />
+                    <input type="button" name="btnShow" value="ShowAll" id="btnShowAll" />
+                </td>
+            </tr>
+        </table>
+        <div id="datalist"></div>
+    </form>
+    <script src="s.js"></script>
+</body>
+
+</html>
